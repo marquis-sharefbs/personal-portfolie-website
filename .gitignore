@@ -1,0 +1,29 @@
+personal_notes.txt
+
+# Single files
+# config.json
+# secrets.txt
+# .env
+
+# Directories
+# node_modules/
+# dist/
+# build/
+
+# File types (using wildcards)
+# *.log
+# *.tmp
+# *.swp
+# *.DS_Store
+
+# Nested paths
+# src/temp/
+# data/*.csv
+
+# Pattern	         What it ignores
+# filename.txt	   Specific file by name
+# *.log	           All files with .log extension
+# folder/	         Entire directory
+# src/**/*.tmp	   Files matching nested paths
+# !important.log	 Exception — do NOT ignore this file (prefix with !)
+#comment	       Comments (lines starting with #)
