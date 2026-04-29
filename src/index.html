@@ -2,41 +2,194 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" >
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Sharef Beckum-Swearington Portfolio</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+			
+			body {
+				font-family: Arial, sans-serif;
+			}
+			
+			.navbar {
+				background-color: #333;
+				padding: 0;
+				position: sticky;
+				top: 0;
+				z-index: 100;
+			}
+			
+			.navbar-container {
+				max-width: 1440px;
+				margin: 0 auto;
+				display: flex;
+				justify content: space-between;
+				align-items: center;
+				padding: 0 20px;
+			}
+			
+			.navbar-logo a {
+				color: white;
+				font-size: 24px;
+				font-weight: bold;
+				text-decoration: none;
+				padding: 15px 0;
+				display: block;
+			}
+			
+			.navbar-menu {
+				display: flex;
+				list-style: none;
+				gap: 30px;
+			}
+			
+			.navbar-link {
+				color: white;
+				text-decoration: none;
+				padding: 15px 10px;
+				display: block;
+				transition: color 0.3s ease;
+			}
+			
+			.navbar-link:hover {
+				color: #4CAF50;
+			}
+			
+			.mobile-menu {
+				display: none;
+				flex-direction: column;
+				cursor: pointer;
+			}
+			
+			.mobile-menu span {
+				width: 25px;
+				height: 3px;
+				background-color: white;
+				margin: 5px 0;
+				transition: 0.3s;
+			}
+			
+			/* Mobile Styles */
+			@media (max-width: 768px) {
+				.navbar-menu {
+					position: absolute;
+					top: 60px;
+					left: 0;
+					width: 100%;
+					flex-direction: column;
+					background-color: #333;
+					gap: 0;
+					max-height: 0;
+					overflow: hidden;
+					transition: max-height 0.3s ease;
+				}
+				
+				.navbar-menu.active {
+					max-height: 400px;
+				}
+				
+				.navbar-item {
+					width: 100%;
+				}
+				
+				.navbar-link {
+					padding: 15px 20px;
+					boder-bottom 1px solid #444;
+				}
+				
+				.mobile-menu {
+					display: flex;
+				}
+				
+				.mobile-menu.active span:nth-child(2){
+					opacity: 0;
+				}
+				
+				.mobile-menu.active span:nth-child(3){
+					transform: rotate(45deg) trasnlate(-5px, -6px);
+				}
+			}					
+		</style>
 	</head>
 	
 	<body>
-		<nav id="nav-pane" class="navigation_bar" name="navigation">
-			<table>
-				<tr>
-					<th></th>
-					<th></th>
-					<th>Skills</th>
-					<th>Projects</th>
-					<th>Experience</th>
-					<th></th>
-					<th></th>
-				</tr>
-			</table>
-		</nav>
-		<div id="seperator" class="seperator" name="seperator"></div>
-		<div id="name-tag" class="name_tag" name="name-tag">
-			<div id="full-name" class="full_name" name="full-name">
-				Sharef Beckum-Swearington
-				<span id="role-title" class="role-title" name="role-title">
-					IT Systems and Operations Specialist
-				</span>
+		<nav class="navbar">
+			<div class="navbar-container">
+				<div class="navbar-logo">
+					<a href="index.html">My Portfolio</a>
+				</div>
+				<ul id="navigation" class="navbar-menu">
+					<li class="navbar-item">
+						<a href="#home" class="navbar-link">Home</a>
+					</li>
+					<li class="navbar-item">
+						<a href="#skills" class="navbar-link">Skills</a>
+					</li>
+					<li class="navbar-item">
+						<a href="#projects" class="navbar-link">Projects</a>
+					</li>
+					<li class="navbar-item">
+						<a href="#about" class="navbar-link">About</a>
+					</li>
+					<li class="navbar-item">
+						<a href="#contact" class="navbar-link">Contact</a>
+					</li>
+				</ul>
+				<div class="mobile-menu" id="menu" >
+					<span>Home</span>
+					<span>Skills</span>
+					<span>Projects</span>
+					<span>About</span>
+					<span>Contact</span>
+				</div>
 			</div>
-		</div>
-		<div id="seperator" class="seperator" name="seperator"></div>
-		<div id="about-me" class="about_me" name="about-me"></div>
-		<div id="seperator" class="seperator" name="seperator"></div>
-		<section></section>
-		<div id="seperator" class="seperator" name="seperator"></div>
-		<section></section>
-		<div id="seperator" class="seperator" name="seperator"></div>
-		<section></section>
-		<div id="seperator" class="seperator" name="seperator"></div>
-		<footer id="contact" class="contact" name="contact"></footer>
+		</nav>
+		<div class="seperator"></div>
+		<section class="home" id="home">
+			<div class="name_tag">
+				<div class="full-name">
+					Sharef Beckum-Swearington
+					<span class="role-title" >
+						IT Systems and Operations Specialist
+					</span>
+				</div>
+			</div>
+		</section>
+		<div class="seperator"></div>
+		<section>
+			
+		</section>
+		<div class="seperator"></div>
+		<section>
+			
+		</section>
+		<div class="seperator"></div>
+		<section>
+			
+		</section>
+		<div class="seperator"></div>
+		<footer class="contact"></footer>
+		
+		<script>
+			const mobile-menu = document.getElementById('menu');
+			const navbarMenu = document.getElementById('navigation');
+			
+			mobile-menu.addEventListener('click', () => {
+				mobile-menu.classList.toggle('active');
+				navigation.classList.toggle('active');
+			});
+			
+			// Close menu when a link is clicked
+			document.querySelectorAll('.navbar-link').forEach(link => {
+				link.addEventListener('click', () => {
+					mobile-menu.classList.remove('active');
+					navigation.classList.remove('active');
+				});
+			});			
+		</script>
 	</body>
 </html>
