@@ -4,142 +4,43 @@
 		<meta charset="UTF-8" >
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Sharef Beckum-Swearington Portfolio</title>
-		<style>
-			* {
-				margin: 0;
-				padding: 0;
-				box-sizing: border-box;
-			}
-			
-			body {
-				font-family: Arial, sans-serif;
-			}
-			
-			.navbar {
-				background-color: #333;
-				padding: 0;
-				position: sticky;
-				top: 0;
-				z-index: 100;
-			}
-			
-			.navbar-container {
-				max-width: 1440px;
-				margin: 0 auto;
-				display: flex;
-				justify content: space-between;
-				align-items: center;
-				padding: 0 20px;
-			}
-			
-			.navbar-logo a {
-				color: white;
-				font-size: 24px;
-				font-weight: bold;
-				text-decoration: none;
-				padding: 15px 0;
-				display: block;
-			}
-			
-			.navbar-menu {
-				display: flex;
-				list-style: none;
-				gap: 30px;
-			}
-			
-			.navbar-link {
-				color: white;
-				text-decoration: none;
-				padding: 15px 10px;
-				display: block;
-				transition: color 0.3s ease;
-			}
-			
-			.navbar-link:hover {
-				color: #4CAF50;
-			}
-			
-			.mobile-menu {
-				display: none;
-				flex-direction: column;
-				cursor: pointer;
-			}
-			
-			.mobile-menu span {
-				width: 25px;
-				height: 3px;
-				background-color: white;
-				margin: 5px 0;
-				transition: 0.3s;
-			}
-			
-			/* Mobile Styles */
-			@media (max-width: 768px) {
-				.navbar-menu {
-					position: absolute;
-					top: 60px;
-					left: 0;
-					width: 100%;
-					flex-direction: column;
-					background-color: #333;
-					gap: 0;
-					max-height: 0;
-					overflow: hidden;
-					transition: max-height 0.3s ease;
-				}
-				
-				.navbar-menu.active {
-					max-height: 400px;
-				}
-				
-				.navbar-item {
-					width: 100%;
-				}
-				
-				.navbar-link {
-					padding: 15px 20px;
-					boder-bottom 1px solid #444;
-				}
-				
-				.mobile-menu {
-					display: flex;
-				}
-				
-				.mobile-menu.active span:nth-child(2){
-					opacity: 0;
-				}
-				
-				.mobile-menu.active span:nth-child(3){
-					transform: rotate(45deg) trasnlate(-5px, -6px);
-				}
-			}					
-		</style>
+		<link rel="stylesheet" href="/styles.css" />
 	</head>
 	
 	<body>
 		<nav class="navbar">
-			<div class="navbar-container">
-				<div class="navbar-logo">
+			<div class="navbarContainer">
+				<div class="navbarLogo">
 					<a href="index.html">My Portfolio</a>
 				</div>
-				<ul id="navigation" class="navbar-menu">
-					<li class="navbar-item">
-						<a href="#home" class="navbar-link">Home</a>
+				<ul class="navbarMenu" id="navigation">
+					<li class="navbarItem">
+						<a href="#home" class="navbarLink">
+							Home
+						</a>
 					</li>
-					<li class="navbar-item">
-						<a href="#skills" class="navbar-link">Skills</a>
+					<li class="navbarItem">
+						<a href="#skills" class="navbarLink">
+							Skills
+						</a>
 					</li>
-					<li class="navbar-item">
-						<a href="#projects" class="navbar-link">Projects</a>
+					<li class="navbarItem">
+						<a href="#projects" class="navbarLink">
+							Projects
+						</a>
 					</li>
-					<li class="navbar-item">
-						<a href="#about" class="navbar-link">About</a>
+					<li class="navbarItem">
+						<a href="#about" class="navbarLink">
+							About
+						</a>
 					</li>
-					<li class="navbar-item">
-						<a href="#contact" class="navbar-link">Contact</a>
+					<li class="navbarItem">
+						<a href="#contact" class="navbarLink">
+							Contact
+						</a>
 					</li>
 				</ul>
-				<div class="mobile-menu" id="menu" >
+				<div class="mobileMenu" id="hamburgerMenu" >
 					<span>Home</span>
 					<span>Skills</span>
 					<span>Projects</span>
@@ -150,46 +51,97 @@
 		</nav>
 		<div class="seperator"></div>
 		<section class="home" id="home">
-			<div class="name_tag">
-				<div class="full-name">
-					Sharef Beckum-Swearington
-					<span class="role-title" >
+			<div class="nameTagContainer">
+				<div class="imageWrapper">
+					<img src="https://avatars.githubusercontent.com/u/
+						279586633?v=4" alt="profile pic from github" width="150px">
+				</div>
+				<div class="content">
+					<div class="socialIcons">
+						<a href="https://github.com/marquis-sharefbs" target="_blank" rel="noreferrer">
+							<img src="/" alt="Github icons created by Freepik - Flaticon">
+							<a href="https://www.flaticon.com/free-icons/github" title="github icons" aria-hidden="true">Github icons created by Freepik - Flaticon</a>
+						</a>
+						<a href="https://www.linkedin.com/in/sharef-mbs/" target="_blank" rel="noreferrer">
+							<img src="/" alt="Linkedin icons created by Freepik - Flaticon">
+							<a href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons" aria-hidden="true">Linkedin icons created by Freepik - Flaticon</a>
+						</a>
+					</div>
+					<h1>Sharef Beckum-Swearington</h1>
+					<p class="roleTitle" >
 						IT Systems and Operations Specialist
-					</span>
+						<span class="certifications">
+							<ul class="certItems">
+								<li id="proof">
+									Bachelor of Sceince in Computer Science
+								</li>
+							</ul>
+						</span>
+					</p>
 				</div>
 			</div>
 		</section>
 		<div class="seperator"></div>
-		<section>
+		<section class="container" id="skills">
+			<div class="skillsWrapper">
+				<h1>Skills</h1>
+				<div class="skillsGrid">
+					<table>
+						<tr class="categories">
+							<th class="categoryIcons" id="javascript">
+								<img src="assets/icons/javascript.png" alt="Javascript icons created by Muhammad Atif - Flaticon" width="128px">
+							</th>
+							<th class="categoryIcons">
+								<img src="/" alt="">
+							</th>
+							<th class="categoryIcons">
+								<img src="/" alt="">
+							</th>
+						</tr>
+						<tr>
+							<td>
+								Full Stack Web Development
+							</td>
+							<td>
+								Computer Repair and Management
+							</td>
+							<td>
+								Information Systems and Security
+							</td>
+						</tr>
+						<tr>
+							<td>
+							</td>
+							<td>
+							</td>
+							<td>
+							</td>
+						</tr>
+						<tr>
+							<td>
+							</td>
+							<td>
+							</td>
+							<td>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</section>
+		<div class="seperator"></div>
+		<section class="projects" id="projects">
 			
 		</section>
 		<div class="seperator"></div>
-		<section>
-			
-		</section>
-		<div class="seperator"></div>
-		<section>
+		<section class="about" id="about">
 			
 		</section>
 		<div class="seperator"></div>
 		<footer class="contact"></footer>
 		
 		<script>
-			const mobile-menu = document.getElementById('menu');
-			const navbarMenu = document.getElementById('navigation');
-			
-			mobile-menu.addEventListener('click', () => {
-				mobile-menu.classList.toggle('active');
-				navigation.classList.toggle('active');
-			});
-			
-			// Close menu when a link is clicked
-			document.querySelectorAll('.navbar-link').forEach(link => {
-				link.addEventListener('click', () => {
-					mobile-menu.classList.remove('active');
-					navigation.classList.remove('active');
-				});
-			});			
+					
 		</script>
 	</body>
 </html>
