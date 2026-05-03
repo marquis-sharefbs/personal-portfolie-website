@@ -9,58 +9,36 @@
 	</head>
 	
 	<body>
-		<nav class="navbar">
-			<div class="navbarContainer">
-				<div class="navbarLogo">
-					<a href="index.html">My Portfolio</a>
-				</div>
-				<ul class="navbarMenu" id="navigation">
-					<li class="navbarItem">
-						<a href="index.html" class="navbarLink">
-							Home
-						</a>
-					</li>
-					<li class="navbarItem">
-						<a href="#skills" class="navbarLink">
-							Skills
-						</a>
-					</li>
-					<li class="navbarItem">
-						<a href="#projects" class="navbarLink">
-							Projects
-						</a>
-					</li>
-					<li class="navbarItem">
-						<a href="#about" class="navbarLink">
-							About
-						</a>
-					</li>
-					<li class="navbarItem">
-						<a href="#contact" class="navbarLink">
-							Contact
-						</a>
-					</li>
+		<nav class="nav">
+			<div class="nav__container">
+				<a href="#" class="nav__logo">My Portfolio</a>
+				
+				
+				<button class="nav__toggle" aria-label="Toggle menu">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+				
+				<ul class="nav__menu">
+					<li><a href="#home">Home</a></li>
+					<li><a href="#skills">Skills</a></li>
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#contact">Contact</a></li>
 				</ul>
-				<!--
-				<div class="mobileMenu" id="hamburgerMenu" >
-					<span>Home</span>
-					<span>Skills</span>
-					<span>Projects</span>
-					<span>About</span>
-					<span>Contact</span>
-				</div>
-				-->
 			</div>
 		</nav>
-		<div class="seperator" id="home"></div>
-		<section class="topOfPage" id="nameTag">
-			<div class="nameTagContainer">
-				<div class="imageWrapper">
-					<img src="https://avatars.githubusercontent.com/u/
-						279586633?v=4" alt="profile pic from github" width="150px">
+		
+		<div class="separator"></div>
+		
+		<section id="home" class="hero">
+			<div class="hero__container">
+				<div class="image__wrapper">
+					<img src="/images/pfp.png" alt="Portrait of Sharef Beckum-Swearington" width="150px">
 				</div>
 				<div class="content">
-					<div class="socialIcons">
+					<div class="social__icons">
 						<a href="https://github.com/marquis-sharefbs" target="_blank" rel="noreferrer">
 							<img src="assets/icons/github.png" alt="Github icons created by Freepik - Flaticon" width="50px">
 						</a>
@@ -68,217 +46,73 @@
 							<img src="assets/icons/linkedin.png" alt="Linkedin icons created by Freepik - Flaticon" width="50px">
 						</a>
 					</div>
+					
+					
 					<h1>Sharef Beckum-Swearington</h1>
-					<p class="roleTitle" >
-						IT Systems and Operations Specialist
-						<span class="certifications">
-							<ul class="certItems">
+					
+					<div class="role__title" >
+						<p>IT Systems and Operations Specialist</p>
+						<p>I analyze systems, break them down, and rebuild them better.</p>
+						<div class="certifications">
+							<ul class="cert__items">
 								<li id="proof">
-									Bachelor of Sceince in Computer Science
+									Bachelor of Science in Computer Science
 								</li>
 							</ul>
-						</span>
-					</p>
-				</div>
-			</div>
-		</section>
-		<div class="seperator"></div>
-		<section class="container" id="skills">
-			<div class="skillsContainer">
-				<h1>Skills</h1>
-				<div class="skillsGrid">
-					<table>
-						<tr class="categories">
-							<th class="categoryIcons" id="fullStack">
-								<img src="assets/icons/full-stack-developer.png" alt="Full stack developer icons created by Talha Dogar - Flaticon" width="128px">
-							</th>
-							<!--
-							<th class="categoryIcons" id="javascript">
-								<img src="/assets/icons/javascript.png" alt="Javascript icons created by Muhammad Atif - Flaticon" width="128px">
-							</th>
-							-->
-							<th class="categoryIcons" id="computerRepair">
-								<img src="assets/icons/repair.png" alt="Repair icons created by Smashicons - Flaticon" width="128px">
-							</th>
-							<!--
-							<th class="categoryIcons" id="python">
-								<img src="/assets/icons/python.png" alt="Code icons created by Freepik - Flaticon" width="128px">
-							</th>
-							-->
-							<th class="categoryIcons" id="itss">
-								<img src="/assets/icons/protection.png" alt="Information system icons created by Misiopstudio - Flaticon" width="128px">
-							</th>
-						</tr>
-						<tr>
-							<td>
-								Full Stack Web Development
-							</td>
-							<td>
-								Computer Repair and Management
-							</td>
-							<td>
-								Information Technology Systems and Security
-							</td>
-						</tr>
-						<tr>
-							<td>
-								I have created this online portfolio from scratch,
-								applying mordern best practices and techniques for
-								readabiliy and accessibility. I am a novice web 
-								developer becoming more familiar with the tools 
-								and languages to provide expert services in the 
-								field of Information Technology and beyond.
-							</td>
-							<td>
-								Across different operating systems, I have assisted 
-								friends and family with their device issues, 
-								fulfilling the role of troubleshooter and hardware
-								consultant and installer. I am confident in 
-								my knowledge and research capabilities to source
-								issues and apply solutions with rollback and 
-								user education in mind.
-							</td>
-							<td>
-								Through many years of maintaining my family's home 
-								network, I have become accustomed with setting up 
-								and modifying LAN networks via router software and 
-								hard network experimentation. I am familiar with DNS,
-								MAC filters, and limiting network access to specific 
-								device identifiers to prevent unauthorized network 
-								access. 
-							</td>
-						</tr>
-						<tr>
-							<td>
-								Tech Stack:
-							</td>
-							<td>
-								Hardware Expertise:
-							</td>
-							<td>
-								Hardware/Network Expertise:
-							</td>
-						</tr>
-					</table>
-				</div>
-			</div>
-		</section>
-		<div class="seperator"></div>
-		<section class="container" id="projects">
-			<div class="projectsContainer">
-				<div class="projectsGrid">
-					<div class="project">
-						<a>
-							<img src="" alt="Password Generator project">
-						</a>
-						<a>
-							<h2>Password Generator Project 
-							<span class="wip" id="projectTag">[in progress]</span>
-							</h2>
-						</a>
-						<p>
-						</p>
+						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-		<div class="seperator"></div>
-		<section class="about" id="about">
-			<div class="aboutContainer">
-				<div class="responsiveResumeContainer" id="responsiveResume">
-					<div class="responsiveResume">
-					</div>					
-				</div>
-			</div>
-		</section>
-		<div class="seperator"></div>
-		<section class="container" id="contact">
-			<div class="contactContainer">
-				<div class="contentWrapper">
-					<h1>Contact Me</h1>
+		
+		<div class="separator"></div>
+		
+		<section id="skills" class="skills">
+			<h2>Skills</h2>
+			
+			<div class="skills__grid">
+				<div class="skill">
+					<h3>Full Stack Development</h3>
 					<p>
-						Got an opportunity for a green techy?
-						Leave a comment and let's work together!
+						Built responsive web applications using modern HTML, CSS, and JavaScript. 
+						Focused on accessibility, clean structure, and performance.
 					</p>
-					<form class="contactForm">
-						<div class="formFlex">
-							<div class="rootControl">
-								<label id="userNameRequired" for="nameField">
-									Your Name
-									<span class="asterisk">
-										
-										*
-									</span>
-								</label>
-								<div class="rootInput">
-									<input id="nameField" 
-									name="visitorName" 
-									placeholder="What is your name?"
-									type="text" required>
-<!-- animation idea
-									<fieldset class="inputBox">
-										<legend class="reminderTransform">
-											<span>
-												Your Name
-												
-												*
-											</span>
-										</legend>
-									</fieldset>
--->
-								</div>
-							</div>
-							<div class="rootControl">
-								<label id="emailRequired" for="emailField">
-									Your Email
-									<span class="asterisk">
-										
-										*
-									</span>
-								</label>
-								<div class="rootInput">
-									<input id="emailField" 
-									name="visitorEmail" 
-									placeholder="What is your e-mail address?"
-									type="email" required>
-<!-- animation idea
-									<fieldset class="inputBox">
-										<legend class="reminderTransform">
-											<span>
-												Your Email
-												
-												*
-											</span>
-										</legend>
-									</fieldset>
--->
-								</div>
-							</div>
-						</div>
-						<div class="rootTextField">
-							<label id="staticNote" 
-							for="textRequired">
-								Your Message
-								<span class="asterisk">
-								
-									*
-								</span>
-							</label>
-							<div class="rootInput">
-								<textarea rows="10"
-								placeholder="Submit any questions,
-								comments, or advice" required>
-								</textarea>
-							</div>
-						</div>
-						<button class="submit" id="send" 
-						type="button">
-							Send
-						</button>
-					</form>
+				</div>
+				
+				<div class="skill">
+					<h3>Computer Repair</h3>
+					<p>
+						Diagnosed and resolved hardware/software issues across multiple systems. 
+						Comfortable with troubleshooting and system configuration.
+					</p>
+				</div>
+				
+				<div class="skill">
+					<h3>IT Systems & Security</h3>
+					<p>
+						Experience with networking fundamentals, router configuration, DNS, 
+						and access control for secure environments.
+					</p>
 				</div>
 			</div>
 		</section>
+		
+		<div class="separator"></div>
+		
+		<section class="contact">
+			<div class="contact__container">
+				<h1>Contact Me</h1>
+				<p>
+					Got an opportunity for a green techy?
+					<a href="mailto:official.sharefmbs@gmail.com">
+						Send me an email
+					</a>
+					Let's work together!
+				</p>
+				
+			</div>
+		</section>
+		
 		<footer>
 			<div>
 				<a href="https://github.com/marquis-sharefbs" target="_blank" rel="noreferrer">
@@ -288,6 +122,7 @@
 					<img src="assets/icons/linkedin.png" alt="Linkedin icons created by Freepik - Flaticon" width="50px">
 				</a>
 			</div>
+			
 			<p>
 				A portfolio website produced by Sharef Beckum-Swearington
 			</p>
