@@ -14,7 +14,7 @@ body {
 
 /* NAVBAR */
 .nav {
-	background: var(--preimary);
+	background: var(--primary);
 	position: sticky;
 	top: 0;
 }
@@ -40,7 +40,7 @@ body {
 	list-style: none;
 }
 
-.nav__menu {
+.nav__menu a {
 	color: var(--text);
 	text-decoration: none;
 	transition: color 0.2s;
@@ -59,7 +59,7 @@ body {
 	border: none;
 }
 
-.nav__toggle span{
+.nav__toggle span {
 	width: 25px;
 	height: 3px;
 	background: white;
@@ -95,11 +95,11 @@ body {
 		background: var(--primary);
 		display: none;
 	}
-	
+
 	.nav__menu.active {
 		display: flex;
 	}
-	
+
 	.nav__toggle {
 		display: flex;
 	}
