@@ -8,11 +8,38 @@ This repository contains a collection of my personal development work, including
 
 ```
 projects/
+├── password-generator/           # Local password generator app
 ├── personal-portfolio-website/   # Frontend portfolio site
 ├── python-scripts/               # Utility and automation scripts
 ├── README.md
 ├── LICENSE
 ```
+
+---
+
+## 🔒 Password Generator App
+
+Located in `password-generator/`
+
+This project is a lightweight local password generator app.
+
+### Features
+
+* Password Generator
+* Save-Search-Storage Functions
+* Minimalist, sanitized UI
+* Built with Python and related libraries
+
+### Running locally
+
+From the project root:
+
+```bash
+cd password-generator
+python3 passgen.py
+```
+
+Follow instructions in terminal
 
 ---
 

@@ -24,9 +24,9 @@ Designed to evolve alongside my skills and experience.
 
 ## Roadmap
 
-- [ ] HTML scaffolding (structure and pages)
-- [ ] CSS styling (layout, fonts, responsiveness)
-- [ ] JavaScript interactivity (smooth scroll, animations)
+- [x] HTML scaffolding (structure and pages)
+- [x] CSS styling (layout, fonts, responsiveness)
+- [x] JavaScript interactivity (smooth scroll, animations)
 - [ ] Flask app setup and routing
 - [ ] SQLite database schema and seed data
 - [ ] Connect Flask to database and render dynamic resume
